@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendence Tracking System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,700,0,0" />
+</head>
+<body>
+    <div class="container">
+        <h1>Attendence Tracking System</h1>
+        <form action="#">
+            <input type="text" id="text" placeholder="Enter Your Name">
+            <div class="select">
+                <h4>Select your Batch</h4>
+                <select id="dropdown">
+                    <option value="sel">Select Your Class</option>
+                    <option value="1st yr BTech">1st yr BTech</option>
+                    <option value="2nd yr BTech">2nd yr BTech</option>
+                    <option value="3rd yr BTech">3rd yr BTech</option>
+                    <option value="4th yr BTech">4th yr BTech</option>
+                </select>
+            </div>
+            <button id="register">Register your Attendence</button>
+        </form>
+    </div>
+    <div class="cam" id ="cam">
+        <span class="material-symbols-outlined" id="close">
+            close
+        </span>
+        <!-- <div class="video-contents"> -->
+            <video id="videoElement" autoplay></video>
+            <div class="result">
+                <input type="text" name="int-name" id="intname" readonly>
+                <input type="text" name="predicted-name" id="predname" value="predicted name" readonly>
+                <input type="text" name="date-time" id="datetime" readonly>
+                <input type="text" name="batch" id="batch" readonly>
+            </div>
+        <!-- </div> -->
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
